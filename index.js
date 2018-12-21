@@ -1,13 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "P"
+var prefix = "b!"
 
 
 
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("Pobc")) {
+    if (message.content.startsWith("b!obc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "P";
+  var prefix = "b!";
 
   client.on("message", message => {
   
@@ -66,7 +66,7 @@ client.on('ready',  () => {
   client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('Padminbc')){
+if (message.content.startsWith('b!adminbc')){
 if(!message.author.id === '476185102922285066') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
@@ -79,7 +79,7 @@ m.sendMessage(args)
 
   
   client.on('message', msg => {
-    if(msg.content === 'Phelp')
+    if(msg.content === 'b!help')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
@@ -93,19 +93,15 @@ m.sendMessage(args)
   
   
   client.on("message", message => {
-    if (message.content === "Phelp") {
+    if (message.content === "b!help") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
-
-       Pobc | لأرسال برود كاست للكل
-
-       Pbc  |  لأرسال برود كاست للأونلاين
-
-       Pinvite | لدعوة البوت الي سيرفرك
-
-       Psupport | سيرفر السبورت** `)
+       b!obc | لأرسال برود كاست للكل
+       b!bc  |  لأرسال برود كاست للأونلاين
+       b!invite | لدعوة البوت الي سيرفرك
+       b!support | سيرفر السبورت** `)
    message.author.sendEmbed(embed)
    
    }
@@ -113,7 +109,7 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "Pinvite") {
+    if (message.content === "b!invite") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
          .addField('Broadcast', `https://discordapp.com/api/oauth2/authorize?client_id=489960386339274771&permissions=8&scope=bot`)
@@ -124,7 +120,7 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "Psupport") {
+    if (message.content === "b!support") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
          .addField('❤سيرفر الدعم الفني', `  https://discord.gg/NuQ2zYu  `)
@@ -138,7 +134,7 @@ m.sendMessage(args)
 
 
    client.on('message', message => {
-    if (message.content.startsWith("Pbot")) {
+    if (message.content.startsWith("b!bot")) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .setAuthor(client.user.username,client.user.avatarURL)
@@ -160,7 +156,7 @@ m.sendMessage(args)
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("By KING_Dz ",{type: 'WATCHING'});
+          client.user.setActivity("b!help | b!invite",{type: 'WATCHING'});
   
   });
 
