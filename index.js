@@ -7,7 +7,7 @@ var prefix = "P"
 //bc
 
 client.on("message", message => {
-    if (message.content.startsWith("b!obc")) {
+    if (message.content.startsWith("Pobc")) {
                  if (!message.member.hasPermission("ADMINISTRATOR"))  return;
   let args = message.content.split(" ").slice(1);
   var argresult = args.join(' ');
@@ -23,7 +23,7 @@ client.on("message", message => {
 //bc online
 
 
-  var prefix = "b!";
+  var prefix = "P";
 
   client.on("message", message => {
   
@@ -66,7 +66,7 @@ client.on('ready',  () => {
   client.on('message', message => {
     if(!message.channel.guild) return;
 let args = message.content.split(' ').slice(1).join(' ');
-if (message.content.startsWith('b!adminbc')){
+if (message.content.startsWith('Padminbc')){
 if(!message.author.id === '476185102922285066') return;
 message.channel.sendMessage('جار ارسال الرسالة |:white_check_mark:')
 client.users.forEach(m =>{
@@ -79,7 +79,7 @@ m.sendMessage(args)
 
   
   client.on('message', msg => {
-    if(msg.content === 'b!help')
+    if(msg.content === 'Phelp')
     msg.reply('Check Your DM :white_check_mark:')
   });
   
@@ -93,19 +93,19 @@ m.sendMessage(args)
   
   
   client.on("message", message => {
-    if (message.content === "b!help") {
+    if (message.content === "Phelp") {
      const embed = new Discord.RichEmbed() 
          .setColor("#00FF00")
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       b!obc | لأرسال برود كاست للكل
+       Pobc | لأرسال برود كاست للكل
 
-       b!bc  |  لأرسال برود كاست للأونلاين
+       Pbc  |  لأرسال برود كاست للأونلاين
 
-       b!invite | لدعوة البوت الي سيرفرك
+       Pinvite | لدعوة البوت الي سيرفرك
 
-       b!support | سيرفر السبورت** `)
+       Psupport | سيرفر السبورت** `)
    message.author.sendEmbed(embed)
    
    }
@@ -113,7 +113,7 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "b!invite") {
+    if (message.content === "Pinvite") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
          .addField('Broadcast', `https://discordapp.com/api/oauth2/authorize?client_id=489960386339274771&permissions=8&scope=bot`)
@@ -124,7 +124,7 @@ m.sendMessage(args)
 
 
    client.on("message", message => {
-    if (message.content === "b!support") {
+    if (message.content === "Psupport") {
      const embed = new Discord.RichEmbed()
          .setColor("RANDOM")
          .addField('❤سيرفر الدعم الفني', `  https://discord.gg/NuQ2zYu  `)
@@ -138,7 +138,7 @@ m.sendMessage(args)
 
 
    client.on('message', message => {
-    if (message.content.startsWith("b!bot")) {
+    if (message.content.startsWith("Pbot")) {
     message.channel.send({
         embed: new Discord.RichEmbed()
             .setAuthor(client.user.username,client.user.avatarURL)
