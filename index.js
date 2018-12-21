@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-var prefix = "b!"
+var prefix = "P"
 
 
 
@@ -160,7 +160,7 @@ m.sendMessage(args)
 
 client.on('ready', () => {
     console.log(`Logged in as ${client.user.tag} !`);
-          client.user.setActivity("By KING_Dz ",{type: 'STREAMING'});
+          client.user.setActivity("By KING_Dz ",{type: 'WATCHING'});
   
   });
 
