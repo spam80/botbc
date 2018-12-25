@@ -99,13 +99,13 @@ m.sendMessage(args)
          .setThumbnail(message.author.avatarURL)
          .setDescription(`**Help|هيلب
 
-       b!obc | لأرسال برود كاست للكل
+       $obc | لأرسال برود كاست للكل
 
-       b!bc  |  لأرسال برود كاست للأونلاين
+       $bc  |  لأرسال برود كاست للأونلاين
 
-       b!invite | لدعوة البوت الي سيرفرك
+       $invite | لدعوة البوت الي سيرفرك
 
-       b!support | سيرفر السبورت** `)
+       $support | سيرفر السبورت** `)
    message.author.sendEmbed(embed)
    
    }
@@ -152,7 +152,7 @@ m.sendMessage(args)
             .addField('``Users``' ,`[ ${client.users.size} ]` , true)
             .addField('``My Name``' , `[ ${client.user.tag} ]` , true)
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
-                  .addField('``My Prefix``' , `[-]` , true)
+                  .addField('``My Prefix``' , `[$]` , true)
                   .addField('``My Language``' , `[ Java Script ]` , true)
                     })
 }
